@@ -1,0 +1,8 @@
+result=""
+x=input().replace(" "," ")
+for i in range(len(x)):
+    if i %2==0:
+        result+=x[i].upper()
+    else:
+        result+=x[i].lower()
+print(result)
