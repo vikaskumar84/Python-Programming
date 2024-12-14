@@ -1,0 +1,9 @@
+result=""
+x=input()
+for i in range(len(x)):
+    if (i+1)%2==0:
+        result+=chr(ord(x[i])+2)
+    else:
+        result+=chr(ord(x[i])-2)
+
+print(result)
