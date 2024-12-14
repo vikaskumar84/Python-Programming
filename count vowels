@@ -1,0 +1,10 @@
+count=0
+list=[]
+a = input()
+for i in a:
+    if i in "aeiouAEIOU":
+        if i not in list:
+            count+=1
+            list+=i
+print(list)
+print(count)
