@@ -1,0 +1,12 @@
+available_seat=100
+count=0
+while available_seat>0:
+    x=int(input("number of students enter in library "))
+    if x<=25:
+        count+=x
+        available_seat = available_seat - x
+        print("currently",count,"students are present in the library")
+        print(available_seat, "seats are left in the library")
+    else:
+        print("more than 25 students are not allowed,so entered limited students ")
+
