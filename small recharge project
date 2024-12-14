@@ -1,0 +1,51 @@
+def main():
+    print("create username\n")
+    user_name=int(input("Enter user name: "))
+    print("create password\n")
+    pass_word=input("Enter password: ")
+    a=int(input("enter username to login "))
+    b=(input("enter password to login "))
+    if (a == user_name):
+        if (b == pass_word):
+            print("successfully login ")
+            print("\nFAST RECHARGE\n")
+        else:
+            print("wrong password.program terminated\n")
+            return 0
+
+
+
+    number=int(input("enter contact number "))
+    amount=int(input("enter amount "))
+    n=int(input("Enter the number "))
+    if(n==10):
+        print("airtel\nvodafone\njio\nidea\nBSNL\n")
+    z=int(input("select your network "))
+    if(z==1):
+        print("airtel\n")
+        print(f"\nHi,recharge of Rs.{amount} successfully credited to your airtel number \n",number)
+    elif(z==2):
+        print("vodafone\n")
+        print(f"\nHi,recharge of Rs.{amount} successfully credited to your vodafone number\n",number)
+
+    elif(z==3):
+        print("jio\n")
+        print(f"\nHi,recharge of Rs.{amount} successfully credited to your jio number\n", amount, number)
+
+    elif (z == 4):
+        print("idea\n")
+        print(f"\nHi,recharge of Rs.{amount} successfully credited to your idea number\n", amount, number)
+
+    elif (z==5):
+        print("BSNL\n")
+        print(f"\nHi,recharge of Rs.{amount} successfully credited to your BSNL number\n", amount, number)
+
+    else:
+        print("network is not found")
+if __name__=='__main__':
+    main()
+
+
+
+
+
