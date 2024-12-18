@@ -1,0 +1,12 @@
+count1=0
+count2=0
+x=input()
+for i in x:
+    if i=="(":
+        count1+=1
+    else:
+        count2+=1
+if count1==count2:
+    print("balanced")
+else:
+    print("unbalance")
