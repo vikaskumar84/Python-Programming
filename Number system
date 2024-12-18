@@ -1,0 +1,5 @@
+x=int(input())
+print(x)
+print(hex(x)[2:])
+print(oct(x)[2:])
+print(hex(x)[2:].upper())
