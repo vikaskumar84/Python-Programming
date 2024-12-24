@@ -1,0 +1,25 @@
+while True:
+    print("only you select these operator's [+,-, *,/] \n")
+    value1=float(input("enter the number:"))
+    operator=(input("enter the operator:"))
+    value2=float(input("enter the number:"))
+    if operator=='+':
+        print(f"{(value1+value2):.2f}")
+    elif operator =="-":
+        print(f"{(value1 - value2):.2f}")
+    elif operator =="*":
+        print(f"{(value1 * value2):.2f}")
+    elif operator =="/":
+        while value1>value2:
+            print(f"{(value1 / value2):.2f}")
+        else:
+            print("not defined\n plz enter the greater value")
+    else:
+        print("wrong choice")
+    print("Do you want to continue press 1 otherwise 0")
+    x=int(input("enter your choice\n"))
+    if x==1:
+        pass
+    else:
+        if x==0:
+            break
